@@ -1,0 +1,39 @@
+elegriparm_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Rev46_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev46
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev47_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev47
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev48_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev48
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev49_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev49
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev50_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev50
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev51_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev51
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev52_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev52
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev53_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev53
+    pid: {p: 100.0, i: 0.01, d: 10.0}

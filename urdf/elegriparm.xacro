@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<robot name="elegriparm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find elegriparm_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find elegriparm_description)/urdf/elegriparm.trans" />
+<xacro:include filename="$(find elegriparm_description)/urdf/elegriparm.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-2.6378267994893178e-05 -2.9829049308323106e-05 0.04524163925089377" rpy="0 0 0"/>
+    <mass value="855.6902182513435"/>
+    <inertia ixx="88.194887" iyy="88.185464" izz="173.450328" ixy="-0.004914" iyz="0.003488" ixz="0.003004"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1">
+  <inertial>
+    <origin xyz="0.0019996208577283126 0.019318586019012794 0.20074728180211923" rpy="0 0 0"/>
+    <mass value="162.8353483389851"/>
+    <inertia ixx="2.737982" iyy="2.220729" izz="1.773971" ixy="-0.054246" iyz="-0.104189" ixz="-0.010784"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1">
+  <inertial>
+    <origin xyz="0.3000261646003874 0.4659776146496854 -0.0297870766062745" rpy="0 0 0"/>
+    <mass value="16.3345971734594"/>
+    <inertia ixx="0.084027" iyy="0.074334" izz="0.07839" ixy="0.00474" iyz="0.010172" ixz="-0.003153"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.25609 0.126556 -0.430868" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.25609 0.126556 -0.430868" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1">
+  <inertial>
+    <origin xyz="0.14597859697392285 -0.01641953728317086 0.2786496741885313" rpy="0 0 0"/>
+    <mass value="58.287075422588"/>
+    <inertia ixx="1.580225" iyy="1.977422" izz="0.51671" ixy="0.045249" iyz="0.086374" ixz="-0.767901"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075858 -0.28662 -0.470215" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075858 -0.28662 -0.470215" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1">
+  <inertial>
+    <origin xyz="0.1933846278170719 0.19334037634426404 0.009724454889752376" rpy="0 0 0"/>
+    <mass value="61.145733834937005"/>
+    <inertia ixx="0.399071" iyy="0.768182" izz="0.671599" ixy="0.150612" iyz="-0.085824" ixz="0.23894"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.136018 -0.076884 -1.083035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.136018 -0.076884 -1.083035" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1">
+  <inertial>
+    <origin xyz="0.0048577051841588725 0.0132170971265827 0.0014246694726254283" rpy="0 0 0"/>
+    <mass value="16.33458651273331"/>
+    <inertia ixx="0.070079" iyy="0.082482" izz="0.084189" ixy="-0.008299" iyz="0.003074" ixz="0.004685"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.163672 -0.329287 -1.18733" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.163672 -0.329287 -1.18733" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link6_1">
+  <inertial>
+    <origin xyz="0.09569963795969719 0.22352333770140004 0.03006401109069179" rpy="0 0 0"/>
+    <mass value="47.776682043389435"/>
+    <inertia ixx="0.864508" iyy="0.246777" izz="0.989472" ixy="-0.323836" iyz="-0.101734" ixz="-0.043556"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.239874 -0.400051 -1.175159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.239874 -0.400051 -1.175159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link7_1">
+  <inertial>
+    <origin xyz="0.08375529761087863 0.055139305957648155 0.04980385889151839" rpy="0 0 0"/>
+    <mass value="62.39336668118014"/>
+    <inertia ixx="0.512747" iyy="0.747456" izz="0.618269" ixy="0.157422" iyz="0.132646" ixz="-0.266844"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.431273 -0.847098 -1.235287" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.431273 -0.847098 -1.235287" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link8_1">
+  <inertial>
+    <origin xyz="0.0023300272081858697 -0.03681932928139231 -0.06041205816796835" rpy="0 0 0"/>
+    <mass value="28.09297060145581"/>
+    <inertia ixx="0.236562" iyy="0.210699" izz="0.122876" ixy="-0.004552" iyz="-0.055219" ixz="-0.010576"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.657663 -0.829363 -1.403017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.657663 -0.829363 -1.403017" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://elegriparm_description/meshes/link8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev46" type="continuous">
+  <origin xyz="0.0 0.0 0.155" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev47" type="continuous">
+  <origin xyz="-0.25609 -0.126556 0.275868" rpy="0 0 0"/>
+  <parent link="link1_1"/>
+  <child link="link2_1"/>
+  <axis xyz="0.111776 0.993733 -0.0"/>
+</joint>
+
+<joint name="Rev48" type="continuous">
+  <origin xyz="0.331948 0.413176 0.039347" rpy="0 0 0"/>
+  <parent link="link2_1"/>
+  <child link="link3_1"/>
+  <axis xyz="0.463424 -0.052126 0.884602"/>
+</joint>
+
+<joint name="Rev49" type="continuous">
+  <origin xyz="0.06016 -0.209736 0.61282" rpy="0 0 0"/>
+  <parent link="link3_1"/>
+  <child link="link4_1"/>
+  <axis xyz="0.463424 -0.052126 0.884602"/>
+</joint>
+
+<joint name="Rev50" type="continuous">
+  <origin xyz="0.027654 0.252403 0.104295" rpy="0 0 0"/>
+  <parent link="link4_1"/>
+  <child link="link5_1"/>
+  <axis xyz="-0.838377 0.297512 0.456739"/>
+</joint>
+
+<joint name="Rev51" type="continuous">
+  <origin xyz="0.076202 0.070764 -0.012171" rpy="0 0 0"/>
+  <parent link="link5_1"/>
+  <child link="link6_1"/>
+  <axis xyz="0.39061 0.912341 0.122711"/>
+</joint>
+
+<joint name="Rev52" type="continuous">
+  <origin xyz="0.191399 0.447047 0.060128" rpy="0 0 0"/>
+  <parent link="link6_1"/>
+  <child link="link7_1"/>
+  <axis xyz="0.39061 0.912341 0.122711"/>
+</joint>
+
+<joint name="Rev53" type="continuous">
+  <origin xyz="0.22639 -0.017735 0.16773" rpy="0 0 0"/>
+  <parent link="link7_1"/>
+  <child link="link8_1"/>
+  <axis xyz="0.709495 -0.383301 0.591351"/>
+</joint>
+
+</robot>
